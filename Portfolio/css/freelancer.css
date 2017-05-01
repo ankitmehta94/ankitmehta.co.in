@@ -14,6 +14,12 @@
 #scrollContainer{
     list-style: none;
 }
+#scrollText2{
+    display: none;
+}
+@keyframes scrollNames {
+   10%{display: block;transition:}
+}
 /*                      /////////////////////               Ankit CSS                ////////////////////////*/
 body {
     overflow-x: hidden;

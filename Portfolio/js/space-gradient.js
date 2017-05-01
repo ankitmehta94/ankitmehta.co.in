@@ -34,5 +34,5 @@ function twinkleTwinkle() {
 
     }      //console.log($('#star0'));
 }
-makeStars();
-setInterval(twinkleTwinkle,1000);
+//makeStars();
+//setInterval(twinkleTwinkle,1000);
