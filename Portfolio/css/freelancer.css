@@ -6,10 +6,11 @@
 /*                      /////////////////////               Ankit CSS                ////////////////////////*/
 .star{
     position:absolute;
-    background: url(https://dl.dropbox.com/u/1488103/julie-logo-sparkle.png) no-repeat;
+    background: url('/img/sparkle.png') no-repeat;
     background-size: contain;
     overflow: hidden;
     z-index: 5;
+    display: none;
 }
 #scrollContainer{
     list-style: none;
@@ -20,6 +21,63 @@
 @keyframes scrollNames {
    10%{display: block;transition:}
 }
+
+/*                      /////////////////////              Scroll Animation                ////////////////////////*/
+.visible {
+    font-weight:600;
+    overflow:hidden;
+    height:40px;
+    padding:0 40px;
+}
+ul.scrollIt {
+    text-align: center;
+    margin-top:0;
+    padding-left:0px;
+    list-style:none;
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-delay: 2s;
+    -webkit-animation-name: change;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: change;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+ul.scrollIt li {
+    line-height:40px;
+    font-size: 24px;
+    margin:0;
+}
+
+@-webkit-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+    0%, 12%, 100% {transform:translateY(0);}
+    17%,29% {transform:translateY(-25%);}
+    34%,46% {transform:translateY(-50%);}
+    51%,63% {transform:translateY(-75%);}
+    68%,80% {transform:translateY(-50%);}
+    85%,97% {transform:translateY(-25%);}
+}
+
+@keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+}
+
+@keyframes change {
+    0%, 12%, 100% {transform:translateY(0);}
+    17%,29% {transform:translateY(-25%);}
+    34%,46% {transform:translateY(-50%);}
+    51%,63% {transform:translateY(-75%);}
+    68%,80% {transform:translateY(-50%);}
+    85%,97% {transform:translateY(-25%);}
+}
+/*                      /////////////////////              Scroll Animation                ////////////////////////*/
 /*                      /////////////////////               Ankit CSS                ////////////////////////*/
 body {
     overflow-x: hidden;
@@ -39,7 +97,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #11a0ff;
 }
 
 h1,
@@ -80,7 +138,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: black;
 }
 
 hr.star-primary {
@@ -95,11 +153,16 @@ hr.star-primary:after {
 .img-centered {
     margin: 0 auto;
 }
-
+.noPadding{
+    padding: 0px;
+}
 header {
     text-align: center;
     color: #fff;
     background: black;
+    height: 100vh;
+}
+.cent-vh{
     height: 100vh;
 }
 header:hover{
@@ -201,7 +264,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #11a0ff;
 }
 
 section.success a,
@@ -294,7 +357,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #11a0ff;
     background: #fff;
 }
 
@@ -347,7 +410,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #11a0ff;
 }
 
 form .row:first-child .floating-label-form-group {

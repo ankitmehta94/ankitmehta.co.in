@@ -1,7 +1,7 @@
 /**
  * Created by ankit on 3/8/17.
  */
-var numberOfStars = 10;
+var numberOfStars = 100;
 var maxTop = $("#spaceGradient").height();
 var maxWidth = $("#spaceGradient").width();
 function getRandomInt(min, max) {
@@ -34,5 +34,5 @@ function twinkleTwinkle() {
 
     }      //console.log($('#star0'));
 }
-//makeStars();
-//setInterval(twinkleTwinkle,1000);
+makeStars();
+setInterval(twinkleTwinkle,1000);
